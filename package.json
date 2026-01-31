@@ -1,0 +1,30 @@
+{
+  "name": "chandrika-mohan-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "firebase": "^11.3.1",
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.24",
+    "firebase-tools": "^13.30.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}
