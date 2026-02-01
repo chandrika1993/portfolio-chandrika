@@ -2,6 +2,16 @@
 
 A high-performance, modern professional portfolio built for **Chandrika Mohan**, a Senior Fullstack Engineer & Team Lead. This site showcases technical expertise in AI-driven automation, scalable architectures, and modern web development.
 
+## 📸 Screenshots
+
+### Light Mode & Hero Section
+![Light Mode Home](https://raw.githubusercontent.com/chandrikamohan/portfolio/main/public/screenshots/light-mode.png)
+*A clean, professional aesthetic with glassmorphism effects.*
+
+### Dark Mode
+![Dark Mode Home](https://raw.githubusercontent.com/chandrikamohan/portfolio/main/public/screenshots/dark-mode.png)
+*Deep space theme optimized for readability and battery saving.*
+
 ## ✨ Key Features
 
 - **Modern Responsive Design**: Built with **React 19** and **Tailwind CSS** for a fluid, accessible experience across all devices.
