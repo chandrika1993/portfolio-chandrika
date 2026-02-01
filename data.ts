@@ -10,7 +10,7 @@ export const personalInfo = {
   email: "chandrikamohan@rocketmail.com",
   github: "https://github.com/chandrika1993",
   linkedin: "https://www.linkedin.com/in/chandrikamohan/",
-  summary: "Highly accomplished Senior Fullstack Engineer (6+ years) and Team Lead specializing in AI-driven automation and autonomous workflow systems. Proven track record at MONA AI in developing LLM-integrated features (AI job offers) and scalable backend architectures. Expert in TypeScript, Node.js, and Google Cloud Platform, with a focus on building high-reliability systems through Test-Driven Development. Native-equivalent English and currently based in Germany."
+  summary: "Highly accomplished Senior Fullstack Engineer (6+ years) and Team Lead specializing in AI-driven automation and autonomous workflow systems. Proven track record in developing LLM-integrated features and scalable backend architectures. Expert in TypeScript, Node.js, and Google Cloud Platform, with a focus on building high-reliability systems through Test-Driven Development. Native-equivalent English proficiency and currently based in Germany"
 };
 
 export const experiences: Experience[] = [

@@ -11,7 +11,7 @@ export default defineConfig({
         main: './index.html'
       }
     },
-    minify: 'terser',
+    minify: 'esbuild',
     sourcemap: false
   },
   server: {

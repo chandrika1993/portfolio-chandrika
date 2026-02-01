@@ -57,6 +57,10 @@ import {
   Video,
 } from "lucide-react";
 
+import profileImg from './profile.jpeg';
+import resume from './Chandrika_Mohan_CV.pdf';
+
+
 interface ScrollRevealProps {
   children: React.ReactNode;
   className?: string;
@@ -284,6 +288,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
                 <a
                   key={link.name}
                   href={link.href}
+                  aria-label="Navigate to ${link.name} section"
                   onClick={(e) => handleNavClick(e, link.href)}
                   className="text-slate-600 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
@@ -294,7 +299,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
 
             <div className="flex items-center gap-2 pl-4 border-l border-slate-200 dark:border-slate-800">
               <a
-                href={personalInfo.cvUrl}
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="View CV in a new tab"
@@ -316,7 +321,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
 
           <div className="md:hidden flex items-center gap-2">
             <a
-              href={personalInfo.cvUrl}
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               title="View CV"
@@ -351,6 +356,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
               <a
                 key={link.name}
                 href={link.href}
+                aria-label="Navigate to ${link.name} section"
                 onClick={(e) => handleNavClick(e, link.href)}
                 className="text-slate-700 dark:text-slate-300 hover:text-slate-600 dark:hover:text-slate-300 block px-3 py-4 rounded-xl text-base font-semibold transition-colors"
               >
@@ -463,6 +469,7 @@ const App: React.FC = () => {
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
                   <a
                     href={`mailto:${personalInfo.email}`}
+                    aria-label="Hire Me via Email"
                     className="flex items-center gap-2 bg-rose-900 dark:bg-amber-900 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-rose-950 dark:hover:bg-amber-700 transition-all shadow-lg shadow-slate-200 dark:shadow-amber-950/20 hover:scale-105 active:scale-95"
                   >
                     <Mail size={18} />
@@ -470,6 +477,7 @@ const App: React.FC = () => {
                   </a>
                   <a
                     href={personalInfo.cvUrl}
+                    aria-label="View CV"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Open CV in a new tab"
@@ -483,12 +491,14 @@ const App: React.FC = () => {
                       href={personalInfo.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="LinkedIn"
                       className="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 rounded-2xl hover:text-slate-600 dark:hover:text-slate-400 hover:border-slate-200 dark:hover:border-slate-900 transition-all hover:scale-110"
                     >
                       <Linkedin size={20} />
                     </a>
                     <a
                       href={personalInfo.github}
+                      aria-label="GitHub"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 rounded-2xl hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-all hover:scale-110"
@@ -516,13 +526,13 @@ const App: React.FC = () => {
                 <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] bg-white dark:bg-slate-900 rounded-[3rem] p-3 shadow-[0_20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-white/50 dark:border-slate-800/50 overflow-hidden">
                   <div className="w-full h-full rounded-[2.2rem] overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
                     <img
-                      src={personalInfo.profileImage}
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.onerror = null;
-                        target.src =
-                          "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800";
-                      }}
+                      src={profileImg}
+                      // onError={(e) => {
+                      //   const target = e.target as HTMLImageElement;
+                      //   target.onerror = null;
+                      //   target.src =
+                      //     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800";
+                      // }}
                       alt={personalInfo.name}
                       className="w-full h-full object-cover transition-all duration-1000 scale-x-[-1] group-hover:scale-x-[-1.05] group-hover:scale-y-[1.05]"
                     />
@@ -636,6 +646,7 @@ const App: React.FC = () => {
                   <div className="h-48 bg-slate-100 dark:bg-slate-800 relative overflow-hidden shrink-0">
                     <img
                       src={project.imageUrl}
+                      aria-label={project.title}
                       alt={project.title}
                       className="w-full h-full object-cover grayscale-[20%] dark:grayscale-[40%] group-hover:grayscale-0 transition-transform duration-700 ease-in-out group-hover:scale-110"
                     />
@@ -661,6 +672,7 @@ const App: React.FC = () => {
                           <a
                             key={i}
                             href={link.url}
+                            aria-label={link.name}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-2 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900/30 rounded-lg transition-colors"
@@ -898,6 +910,7 @@ const App: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href={`mailto:${personalInfo.email}`}
+                  aria-label="Contact Me via Email"
                   className="inline-flex items-center justify-center gap-3 bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 shadow-xl"
                 >
                   <Mail size={24} />
@@ -907,6 +920,7 @@ const App: React.FC = () => {
                 <a
                   href={personalInfo.linkedin}
                   target="_blank"
+                  aria-label="Visit my LinkedIn Profile"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-slate-500/20 text-slate-700 dark:text-slate-50 border border-white/20 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all backdrop-blur-sm"
                 >
@@ -947,6 +961,7 @@ const App: React.FC = () => {
             <div className="flex gap-4">
               <a
                 href={personalInfo.linkedin}
+                aria-label="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-400 rounded-xl transition-all hover:scale-110"
@@ -955,6 +970,7 @@ const App: React.FC = () => {
               </a>
               <a
                 href={personalInfo.github}
+                aria-label="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-white rounded-xl transition-all hover:scale-110"
@@ -963,6 +979,7 @@ const App: React.FC = () => {
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
+                aria-label="Email"
                 className="p-3 bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-400 rounded-xl transition-all hover:scale-110"
               >
                 <Mail size={20} />
@@ -970,6 +987,7 @@ const App: React.FC = () => {
               <a
                 href={personalInfo.cvUrl}
                 target="_blank"
+                aria-label="View CV"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-400 rounded-xl transition-all hover:scale-110"
                 title="View CV in a new tab"
