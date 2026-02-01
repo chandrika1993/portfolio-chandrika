@@ -5,11 +5,11 @@ A high-performance, modern professional portfolio built for **Chandrika Mohan**,
 ## 📸 Screenshots
 
 ### Light Mode & Hero Section
-![Light Mode Home](https://raw.githubusercontent.com/chandrikamohan/portfolio/main/public/screenshots/light-mode.png)
+![Light Mode Home](screenshots/light-mode.png)
 *A clean, professional aesthetic with glassmorphism effects.*
 
 ### Dark Mode
-![Dark Mode Home](https://raw.githubusercontent.com/chandrikamohan/portfolio/main/public/screenshots/dark-mode.png)
+![Dark Mode Home](screenshots/dark-mode.png)
 *Deep space theme optimized for readability and battery saving.*
 
 ## ✨ Key Features
