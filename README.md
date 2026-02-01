@@ -2,7 +2,7 @@
 
 **A personal developer portfolio website** to showcase skills, projects, contact details, and resume — built with modern frontend tools.
 
-🔗 Live Demo: *(Add your deployed URL here — e.g., https://www.chandrika.com
+🔗 Live Demo: *(Add your deployed URL here — e.g., https://www.chandrikamohan.com
 
 ## 🧠 About
 
@@ -19,12 +19,12 @@ The site includes:
 
 This project is built using the following technologies:
 
-- **React** — UI library for building components
-- **Vite** — Fast development and build tool
-- **Tailwind CSS** — Utility-first CSS framework
-- **TypeScript** — Static typing for JavaScript
-- **Firebase** — For deployment features
-- **Other tools**: PostCSS
+- **React** : UI library for building components
+- **Vite** : Fast development and build tool
+- **Tailwind CSS** : Utility-first CSS framework
+- **TypeScript** : Static typing for JavaScript
+- **Firebase** : For deployment features
+- **Other tools** : PostCSS
 
 ## 📦 Project Structure
 
@@ -56,14 +56,14 @@ To run this project locally:
 2. **Install dependencies**
    ```bash
    npm install
-  # or
-  yarn
+     # or
+   yarn
   
 3. **Start the development server**
 
 ```bash
-    npm run dev
+npm run dev
   # or
-  yarn dev
+yarn dev
 
 
