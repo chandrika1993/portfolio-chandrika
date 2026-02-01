@@ -2,16 +2,6 @@
 
 A high-performance, modern professional portfolio built for **Chandrika Mohan**, a Senior Fullstack Engineer & Team Lead. This site showcases technical expertise in AI-driven automation, scalable architectures, and modern web development.
 
-## 📸 Screenshots
-
-### Light Mode & Hero Section
-![Light Mode Home](screenshots/light-mode.png)
-*A clean, professional aesthetic with glassmorphism effects.*
-
-### Dark Mode
-![Dark Mode Home](screenshots/dark-mode.png)
-*Deep space theme optimized for readability and battery saving.*
-
 ## ✨ Key Features
 
 - **Modern Responsive Design**: Built with **React 19** and **Tailwind CSS** for a fluid, accessible experience across all devices.
@@ -72,6 +62,18 @@ firebase deploy
   - `firebase.ts`: Firebase SDK initialization.
 - `public/`: Static assets, sitemap, and robots.txt.
 - `index.html`: Entry point with Tailwind configuration and import maps.
+
+## 📸 Screenshots
+
+### Light Mode & Hero Section
+            *A clean, professional aesthetic with glassmorphism effects.*
+![Light Mode Home](screenshots/chandrikamohan.com_LightTheme.png)
+
+
+### Dark Mode
+      *Deep space theme optimized for readability and battery saving.*
+![Dark Mode Home](screenshots/chandrikamohan.com_DarkTheme.png)
+
 
 ## 📄 License
 This project is for personal portfolio use. Content and design © 2025 Chandrika Mohan.
