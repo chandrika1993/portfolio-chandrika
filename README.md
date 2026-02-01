@@ -1,69 +1,70 @@
-# Portfolio Chandrika
+# Chandrika Mohan | Portfolio 🚀
 
-**A personal developer portfolio website** to showcase skills, projects, contact details, and resume — built with modern frontend tools.
+A high-performance, modern professional portfolio built for **Chandrika Mohan**, a Senior Fullstack Engineer & Team Lead. This site showcases technical expertise in AI-driven automation, scalable architectures, and modern web development.
 
-🔗 Live Demo: *(Add your deployed URL here — e.g., https://www.chandrikamohan.com
+## ✨ Key Features
 
-## 🧠 About
+- **Modern Responsive Design**: Built with **React 19** and **Tailwind CSS** for a fluid, accessible experience across all devices.
+- **Dark Mode Support**: Seamless transition between Light and Dark themes with system preference detection.
+- **Performance Optimized**: Achieves high scores in Core Web Vitals through Vite's lightning-fast build system and aggressive asset caching.
+- **SEO Ready**: Dynamic `sitemap.xml` and `robots.txt` generation for optimal search engine crawling.
+- **Glassmorphism UI**: High-end aesthetic using backdrop filters and custom indigo-based design tokens.
 
-This repository contains the source code for my personal portfolio website. Its purpose is to present who I am, what I build, and how to get in touch with me.
+## 🛠 Tech Stack
 
-The site includes:
-- 🧑‍💻 Intro / About Me
-- 📂 Projects showcase
-- 🛠️ Skills and technologies
-- 📄 Resume / CV integration
-- 📬 Contact details
+- **Frontend**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS, Lucide React (Icons)
+- **Backend/Infrastructure**: Firebase Hosting, Firebase Analytics
+- **Tools**: PostCSS, Autoprefixer, ESLint
 
-## 🚀 Tech Stack
+## 🚀 Getting Started
 
-This project is built using the following technologies:
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
+- Firebase CLI (`npm install -g firebase-tools`)
 
-- **React** : UI library for building components
-- **Vite** : Fast development and build tool
-- **Tailwind CSS** : Utility-first CSS framework
-- **TypeScript** : Static typing for JavaScript
-- **Firebase** : For deployment features
-- **Other tools** : PostCSS
-
-## 📦 Project Structure
-
-├── public/
-│   └── index.html
-├── src/
-│   ├── App.tsx
-│   ├── index.tsx
-│   ├── data.ts
-│   └── types.ts
-├── .gitignore
-├── tailwind.config.js
-├── vite.config.ts
-├── package.json
-└── README.md
-
-
-
-
-## 🛠️ Setup & Installation
-
-To run this project locally:
-
-1. **Clone the repository**
+### Installation
+1. Clone the repository:
    ```bash
-   git clone https://github.com/chandrika1993/portfolio-chandrika.git
-   cd portfolio-chandrika
-   
-2. **Install dependencies**
+   git clone https://github.com/chandrikamohan/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
-     # or
-   yarn
-  
-3. **Start the development server**
-
+   ```
+   
+### Development
+Run the local development server:
 ```bash
 npm run dev
-  # or
-yarn dev
+```
 
+### Build & Deployment
+Build the project for production:
+```bash
+npm run build
+```
 
+Deploy to Firebase:
+```bash
+firebase deploy
+```
+
+## 📁 Project Structure
+
+- `src/` (Conceptual root):
+  - `App.tsx`: Main application logic and AI integration.
+  - `data.ts`: Centralized configuration for CV data and personal info.
+  - `types.ts`: TypeScript interfaces for data consistency.
+  - `firebase.ts`: Firebase SDK initialization.
+- `public/`: Static assets, sitemap, and robots.txt.
+- `index.html`: Entry point with Tailwind configuration and import maps.
+
+## 📄 License
+This project is for personal portfolio use. Content and design © 2025 Chandrika Mohan.
+
+---
+*Built with precision and AI innovation.*
