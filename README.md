@@ -2,6 +2,8 @@
 
 A high-performance, modern professional portfolio built for **Chandrika Mohan**, a Senior Fullstack Engineer & Team Lead. This site showcases technical expertise in AI-driven automation, scalable architectures, and modern web development.
 
+## 🔗 Live URL     [chandrikamohan.com](https://chandrikamohan.com)
+
 ## ✨ Key Features
 
 - **Modern Responsive Design**: Built with **React 19** and **Tailwind CSS** for a fluid, accessible experience across all devices.
