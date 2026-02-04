@@ -67,8 +67,8 @@ firebase deploy
 
 ## 📸 Screenshots
 
-### Perfect Page Speed Insights
-!(screenshots/screenshots/PageSpeedInsights.png)
+### Perfect Google Page Speed Insights
+![Google Page Speed Insights Results](screenshots/screenshots/PageSpeedInsights.png)
 
 ### Light Mode & Hero Section
             *A clean, professional aesthetic with glassmorphism effects.*
